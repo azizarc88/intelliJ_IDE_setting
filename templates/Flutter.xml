@@ -31,7 +31,7 @@
       <option name="DART_STATEMENT" value="true" />
     </context>
   </template>
-  <template name="blbloc" value="BlocListener&lt;$NAME$Bloc, BlocState&gt;(&#10;      listener: (context, state) {&#10;        if (state is ErrorState &amp;&amp; !state.primary) {&#10;          CSnackbar.error(context,&#10;                    error: state.error,&#10;                    onActionPress: () =&gt; _bloc.add(state.event),&#10;                    actionName: &quot;Coba Lagi&quot;)&#10;                .show();&#10;        }&#10;      },&#10;      child: $END$,&#10;    )" description="Create bloc listener template" toReformat="false" toShortenFQNames="true">
+  <template name="blbloc" value="BlocListener&lt;$NAME$Bloc, BlocState&gt;(&#10;      listener: (context, state) {&#10;        if (state is ErrorState &amp;&amp; !state.primary) {&#10;          CDialog.error(context,&#10;                    error: state.error,&#10;                    onActionPress: () =&gt; _bloc.add(state.event),&#10;                    actionName: &quot;Coba Lagi&quot;)&#10;                .show();&#10;        }&#10;      },&#10;      child: $END$,&#10;    )" description="Create bloc listener template" toReformat="false" toShortenFQNames="true">
     <variable name="NAME" expression="" defaultValue="" alwaysStopAt="true" />
     <context>
       <option name="DART_STATEMENT" value="true" />
