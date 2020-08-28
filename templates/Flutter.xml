@@ -1,0 +1,64 @@
+<templateSet group="Flutter">
+  <template name="streamBldr" value="StreamBuilder(stream: $STREAM$, builder: (BuildContext context, AsyncSnapshot snapshot) {if(snapshot.hasError) return $ERRORWIDGET$; switch (snapshot.connectionState) {case ConnectionState.none: return $DEFAULTWIDGET$;case ConnectionState.waiting: return $LOADINGWIDGET$;case ConnectionState.active: return $ACTIVEWIDGET$;case ConnectionState.done: return $FINISHEDWIDGET$;}return null; // unreachable}, )," description="Create StreamBuilder" toReformat="true" toShortenFQNames="true">
+    <variable name="STREAM" expression="&quot;stream&quot;" defaultValue="" alwaysStopAt="true" />
+    <variable name="ERRORWIDGET" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="DEFAULTWIDGET" expression="&quot;ConnectionNone&quot;" defaultValue="" alwaysStopAt="true" />
+    <variable name="LOADINGWIDGET" expression="&quot;ConnectionWaiting&quot;" defaultValue="" alwaysStopAt="true" />
+    <variable name="ACTIVEWIDGET" expression="&quot;ConnectionActive&quot;" defaultValue="" alwaysStopAt="true" />
+    <variable name="FINISHEDWIDGET" expression="&quot;ConnectionDone&quot;" defaultValue="" alwaysStopAt="true" />
+    <context />
+  </template>
+  <template name="didUpdateW" value="@override &#10; void didUpdateWidget ($Type$ oldWidget) { &#10; super.didChangeDependencies(); &#10; $body$ &#10;}&#10;" description="didUpdateWidget" toReformat="true" toShortenFQNames="true">
+    <variable name="Type" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="body" expression="$body$" defaultValue="" alwaysStopAt="true" />
+    <context />
+  </template>
+  <template name="valueListenableBuilder" value="ValueListenableBuilder( &#10; valueListenable: $duration$, &#10; builder: (BuildContext context, $type$ value, Widget child) { &#10; return  $body$  &#10; }&#10;" description="Value Listenable Builder" toReformat="true" toShortenFQNames="true">
+    <variable name="duration" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="type" expression="$type$" defaultValue="dynamic" alwaysStopAt="true" />
+    <variable name="body" expression="$body$" defaultValue="Container();" alwaysStopAt="true" />
+    <context />
+  </template>
+  <template name="cbloc" value="import 'package:dio/dio.dart';&#10;import 'package:flutter_bloc/flutter_bloc.dart';&#10;import 'package:food_id/src/utils/bloc/bloc_management.dart';&#10;import 'package:food_id/src/utils/bloc/default_event.dart';&#10;import 'package:food_id/src/utils/bloc/default_state.dart';&#10;&#10;class $NAME$Bloc extends Bloc&lt;BlocEvent, BlocState&gt; {&#10;  List&lt;$END$&gt; _data = [];&#10;  CancelToken _cancelToken = CancelToken();&#10;&#10;  bool get isDataEmpty =&gt; (_data == null || _data.isEmpty);&#10;&#10;  @override&#10;  BlocState get initialState =&gt; _generateInitialState();&#10;&#10;  @override&#10;  Stream&lt;BlocState&gt; mapEventToState(BlocEvent event) async* {&#10;    if (event is GetData) {&#10;      &#10;    } else if (event is CustomState) {&#10;      yield event.state;&#10;    }&#10;  }&#10;&#10;  void cancelPrevRequest() {&#10;    _cancelToken.cancel(&quot;new request&quot;);&#10;    _cancelToken = new CancelToken();&#10;  }&#10;&#10;  _generateInitialState() {&#10;    return ShowData(null);&#10;  }&#10;&#10;  @override&#10;  void onError(Object error, StackTrace stacktrace) {&#10;    print(&quot;##### $NAME$Bloc.onError $error\n$stacktrace&quot;);&#10;  }&#10;}&#10;" description="Create bloc template" toReformat="false" toShortenFQNames="true">
+    <variable name="NAME" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="DART_TOPLEVEL" value="true" />
+    </context>
+  </template>
+  <template name="bpbloc" value="BlocProvider(&#10;                  create: (context) {&#10;                    return $NAME$Bloc();&#10;                  },&#10;                  child: $NAME$(),&#10;                )" description="Create bloc provider to create bloc in the tree" toReformat="false" toShortenFQNames="true">
+    <variable name="NAME" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="DART_STATEMENT" value="true" />
+    </context>
+  </template>
+  <template name="blbloc" value="BlocListener&lt;$NAME$Bloc, BlocState&gt;(&#10;      listener: (context, state) {&#10;        if (state is ErrorState &amp;&amp; !state.primary) {&#10;          CSnackbar.error(context,&#10;                    error: state.error,&#10;                    onActionPress: () =&gt; _bloc.add(state.event),&#10;                    actionName: &quot;Coba Lagi&quot;)&#10;                .show();&#10;        }&#10;      },&#10;      child: $END$,&#10;    )" description="Create bloc listener template" toReformat="false" toShortenFQNames="true">
+    <variable name="NAME" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="DART_STATEMENT" value="true" />
+    </context>
+  </template>
+  <template name="bbloc" value="BlocBuilder&lt;$NAME$Bloc, BlocState&gt;(&#10;        builder: (context, state) {&#10;          if (state is ErrorState &amp;&amp; state.primary) {&#10;            _currentPage = _buildErrorView(state);&#10;          } else if (state is LoadingState) {&#10;            _currentPage = _buildLoading(context);&#10;          } else if (state is ShowData) {&#10;            if (state.data == null) {&#10;              _currentPage = _buildLoading(context);&#10;            } else&#10;              _currentPage = _buildContent(context, state);&#10;          }&#10;&#10;          return _currentPage;&#10;        },&#10;      )" description="Create bloc builder template" toReformat="false" toShortenFQNames="true">
+    <variable name="NAME" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="DART_STATEMENT" value="true" />
+    </context>
+  </template>
+  <template name="printd" value="FLog.info(text: &quot;##### ${$content$}&quot;);" description="Create print debug template" toReformat="false" toShortenFQNames="true">
+    <variable name="content" expression="dartMethodParameters()" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="DART_STATEMENT" value="true" />
+    </context>
+  </template>
+  <template name="evbloc" value="class $NAME$ extends BlocEvent {&#10;  $NAME$();&#10;&#10;  @override&#10;  List&lt;Object&gt; get props =&gt; [];&#10;&#10;  @override&#10;  String toString() {&#10;    return &quot;$NAME$ $props&quot;;&#10;  }&#10;}" description="Create bloc event template" toReformat="false" toShortenFQNames="true">
+    <variable name="NAME" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="DART_TOPLEVEL" value="true" />
+    </context>
+  </template>
+  <template name="stbloc" value="class $NAME$ extends BlocState {&#10;  $NAME$();&#10;&#10;  @override&#10;  List&lt;Object&gt; get props =&gt; [];&#10;&#10;  @override&#10;  String toString() {&#10;    return &quot;$NAME$ $props&quot;;&#10;  }&#10;}" description="Create bloc state template" toReformat="false" toShortenFQNames="true">
+    <variable name="NAME" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="DART_TOPLEVEL" value="true" />
+    </context>
+  </template>
+</templateSet>

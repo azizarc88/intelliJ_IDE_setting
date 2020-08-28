@@ -1,0 +1,18 @@
+<keymap version="1" name="macOS copy" parent="Mac OS X 10.5+">
+  <action id="ExtractMethod">
+    <keyboard-shortcut first-keystroke="alt m" />
+  </action>
+  <action id="Flutter.ExtractWidget">
+    <keyboard-shortcut first-keystroke="alt w" />
+  </action>
+  <action id="MinimizeCurrentWindow" />
+  <action id="android.deploy.ApplyChanges">
+    <keyboard-shortcut first-keystroke="ctrl meta e" />
+  </action>
+  <action id="android.deploy.CodeSwap">
+    <keyboard-shortcut first-keystroke="shift ctrl meta e" />
+  </action>
+  <action id="osmedile.intellij.stringmanip.PopupChoiceAction">
+    <keyboard-shortcut first-keystroke="shift alt m" />
+  </action>
+</keymap>
