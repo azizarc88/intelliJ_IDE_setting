@@ -9,6 +9,9 @@
   <action id="Flutter.ExtractWidget">
     <keyboard-shortcut first-keystroke="alt w" />
   </action>
+  <action id="Git.Pull">
+    <keyboard-shortcut first-keystroke="shift meta p" />
+  </action>
   <action id="MinimizeCurrentWindow" />
   <action id="android.deploy.ApplyChanges">
     <keyboard-shortcut first-keystroke="ctrl meta e" />
