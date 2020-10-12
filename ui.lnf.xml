@@ -4,6 +4,8 @@
     <option name="EDITOR_TAB_LIMIT" value="30" />
     <option name="OVERRIDE_NONIDEA_LAF_FONTS" value="true" />
     <option name="PRESENTATION_MODE_FONT_SIZE" value="36" />
+    <option name="RECENT_FILES_LIMIT" value="300" />
+    <option name="RECENT_LOCATIONS_LIMIT" value="100" />
     <option name="SHOW_MEMORY_INDICATOR" value="true" />
   </component>
 </application>
