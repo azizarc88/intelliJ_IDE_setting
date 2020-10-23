@@ -58,4 +58,9 @@
       <option name="DART_TOPLEVEL" value="true" />
     </context>
   </template>
+  <template name="fclb" value="WidgetsBinding.instance.addPostFrameCallback((_) {&#10;    $END$&#10;});" description="Add frame callback" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="DART_STATEMENT" value="true" />
+    </context>
+  </template>
 </templateSet>
