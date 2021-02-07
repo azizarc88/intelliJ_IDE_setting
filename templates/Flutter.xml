@@ -6,23 +6,21 @@
     <variable name="LOADINGWIDGET" expression="&quot;ConnectionWaiting&quot;" defaultValue="" alwaysStopAt="true" />
     <variable name="ACTIVEWIDGET" expression="&quot;ConnectionActive&quot;" defaultValue="" alwaysStopAt="true" />
     <variable name="FINISHEDWIDGET" expression="&quot;ConnectionDone&quot;" defaultValue="" alwaysStopAt="true" />
-    <context />
   </template>
   <template name="didUpdateW" value="@override &#10; void didUpdateWidget ($Type$ oldWidget) { &#10; super.didChangeDependencies(); &#10; $body$ &#10;}&#10;" description="didUpdateWidget" toReformat="true" toShortenFQNames="true">
     <variable name="Type" expression="" defaultValue="" alwaysStopAt="true" />
     <variable name="body" expression="$body$" defaultValue="" alwaysStopAt="true" />
-    <context />
   </template>
   <template name="valueListenableBuilder" value="ValueListenableBuilder( &#10; valueListenable: $duration$, &#10; builder: (BuildContext context, $type$ value, Widget child) { &#10; return  $body$  &#10; }&#10;" description="Value Listenable Builder" toReformat="true" toShortenFQNames="true">
     <variable name="duration" expression="" defaultValue="" alwaysStopAt="true" />
     <variable name="type" expression="$type$" defaultValue="dynamic" alwaysStopAt="true" />
     <variable name="body" expression="$body$" defaultValue="Container();" alwaysStopAt="true" />
-    <context />
   </template>
   <template name="cbloc" value="import 'package:dio/dio.dart';&#10;import 'package:flutter_bloc/flutter_bloc.dart';&#10;import 'package:food_id/src/utils/bloc/bloc_management.dart';&#10;import 'package:food_id/src/utils/bloc/default_event.dart';&#10;import 'package:food_id/src/utils/bloc/default_state.dart';&#10;&#10;class $NAME$Bloc extends Bloc&lt;BlocEvent, BlocState&gt; {&#10;  List&lt;$END$&gt; _data = [];&#10;  CancelToken _cancelToken = CancelToken();&#10;&#10;  bool get isDataEmpty =&gt; (_data == null || _data.isEmpty);&#10;&#10;  @override&#10;  BlocState get initialState =&gt; _generateInitialState();&#10;&#10;  @override&#10;  Stream&lt;BlocState&gt; mapEventToState(BlocEvent event) async* {&#10;    if (event is GetData) {&#10;      &#10;    } else if (event is CustomState) {&#10;      yield event.state;&#10;    }&#10;  }&#10;&#10;  void cancelPrevRequest() {&#10;    _cancelToken.cancel(&quot;new request&quot;);&#10;    _cancelToken = new CancelToken();&#10;  }&#10;&#10;  _generateInitialState() {&#10;    return ShowData(null);&#10;  }&#10;&#10;  @override&#10;  void onError(Object error, StackTrace stacktrace) {&#10;    print(&quot;##### $NAME$Bloc.onError $error\n$stacktrace&quot;);&#10;  }&#10;}&#10;" description="Create bloc template" toReformat="false" toShortenFQNames="true">
     <variable name="NAME" expression="" defaultValue="" alwaysStopAt="true" />
     <context>
-      <option name="DART_TOPLEVEL" value="true" />
+      <option name="DART" value="true" />
+      <option name="DART_STATEMENT" value="false" />
     </context>
   </template>
   <template name="bpbloc" value="BlocProvider(&#10;                  create: (context) {&#10;                    return $NAME$Bloc();&#10;                  },&#10;                  child: $NAME$(),&#10;                )" description="Create bloc provider to create bloc in the tree" toReformat="false" toShortenFQNames="true">
@@ -69,6 +67,18 @@
   <template name="print" value="FLog.info(text: &quot;##### &quot;);" description="Create print debug template" toReformat="false" toShortenFQNames="true">
     <context>
       <option name="DART_STATEMENT" value="true" />
+    </context>
+  </template>
+  <template name="sb" value="CSizedBox(&#10;    $END$,&#10;)," shortcut="TAB" description="SizedBox" toReformat="true" toShortenFQNames="true">
+    <context>
+      <option name="DART_STATEMENT" value="true" />
+    </context>
+  </template>
+  <template name="copen" value="Future&lt;T&gt; open&lt;T&gt;(BuildContext context) async {&#10;  return await CNavigator.openScreen&lt;T&gt;(context, this);&#10;}" description="Create open function" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="DART" value="true" />
+      <option name="DART_STATEMENT" value="false" />
+      <option name="DART_TOPLEVEL" value="false" />
     </context>
   </template>
 </templateSet>
