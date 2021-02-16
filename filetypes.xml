@@ -6,6 +6,7 @@
       <mapping ext="main.kts" type="Kotlin" />
       <mapping pattern="Pluginfile" type="PLAIN_TEXT" />
       <mapping pattern="Matchfile" type="PLAIN_TEXT" />
+      <mapping ext="lock" type="PLAIN_TEXT" />
     </extensionMap>
   </component>
 </application>
