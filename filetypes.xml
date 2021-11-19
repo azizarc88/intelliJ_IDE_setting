@@ -10,6 +10,7 @@
       <mapping pattern="testfile" type="PLAIN_TEXT" />
       <mapping ext="plist" type="PLAIN_TEXT" />
       <mapping ext="lock" type="PLAIN_TEXT" />
+      <mapping ext="arb" type="PLAIN_TEXT" />
       <mapping ext="xcconfig" type="PLAIN_TEXT" />
       <mapping ext="entitlements" type="PLAIN_TEXT" />
       <removed_mapping ext="apk" approved="true" type="ARCHIVE" />
