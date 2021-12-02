@@ -100,4 +100,14 @@
     <variable name="SNAME" expression="regularExpression(concat(&quot;_&quot;, NAME, &quot;State&quot;), &quot;^__&quot;, &quot;_&quot;)" defaultValue="" alwaysStopAt="false" />
     <context />
   </template>
+  <template name="applc" value="AppLocale.of(context).loc($END$, map: [])" description="Locale format" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="DART_STATEMENT" value="true" />
+    </context>
+  </template>
+  <template name="appc" value="AppLocale.of(context).loc($END$)" description="Locale format" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="DART_STATEMENT" value="true" />
+    </context>
+  </template>
 </templateSet>
