@@ -110,4 +110,10 @@
       <option name="DART_STATEMENT" value="true" />
     </context>
   </template>
+  <template name="fbl" value="$NAME$() : super(ShowData(null));" toReformat="false" toShortenFQNames="true">
+    <variable name="NAME" expression="dartClassName()" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="DART" value="true" />
+    </context>
+  </template>
 </templateSet>
