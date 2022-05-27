@@ -1,0 +1,9 @@
+<application>
+  <component name="NotificationConfiguration">
+    <notification groupId="Build sync orphan modules" displayType="NONE" shouldLog="false" />
+    <notification groupId="Gradle Notification Group" displayType="NONE" shouldLog="false" />
+    <notification groupId="Project Loading Error" shouldLog="false" />
+    <notification groupId="Project Settings" shouldLog="false" />
+    <notification groupId="System Messages" displayType="NONE" shouldLog="false" />
+  </component>
+</application>

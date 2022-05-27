@@ -9,5 +9,7 @@
     <mask>*.jsp</mask>
     <mask>*.properties</mask>
     <mask>*.java</mask>
+    <mask>*phy.dart</mask>
+    <mask>*.dart</mask>
   </component>
 </application>
