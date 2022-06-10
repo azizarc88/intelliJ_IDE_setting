@@ -3,11 +3,11 @@
     <extensionMap>
       <mapping ext="gradle.kts" type="Kotlin" />
       <mapping ext="main.kts" type="Kotlin" />
+      <mapping pattern="testfile" type="PLAIN_TEXT" />
       <mapping pattern="test" type="PLAIN_TEXT" />
       <mapping pattern="Pluginfile" type="PLAIN_TEXT" />
       <mapping pattern="Matchfile" type="PLAIN_TEXT" />
       <mapping pattern="test2" type="PLAIN_TEXT" />
-      <mapping pattern="testfile" type="PLAIN_TEXT" />
       <mapping ext="plist" type="PLAIN_TEXT" />
       <mapping ext="lock" type="PLAIN_TEXT" />
       <mapping ext="arb" type="PLAIN_TEXT" />
