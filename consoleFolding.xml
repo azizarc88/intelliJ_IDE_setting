@@ -3,6 +3,7 @@
     <option name="addedPositive">
       <list>
         <option value="BufferPoolAccessor2" />
+        <option value="BufferQueueProducer" />
         <option value="CCodec" />
         <option value="Codec2Client" />
         <option value="ColorUtils" />
@@ -13,7 +14,7 @@
         <option value="D/SurfaceUtils" />
         <option value="I/MediaCodec" />
         <option value="MediaCodec" />
-        <option value="BufferQueueProducer" />
+        <option value="Counters" />
       </list>
     </option>
   </component>
