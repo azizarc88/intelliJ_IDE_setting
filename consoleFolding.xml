@@ -7,14 +7,16 @@
         <option value="CCodec" />
         <option value="Codec2Client" />
         <option value="ColorUtils" />
+        <option value="Counters" />
         <option value="D/CCodec" />
         <option value="D/Codec2Client" />
         <option value="D/EGL_emulation" />
         <option value="D/ReflectedParamUpdater" />
         <option value="D/SurfaceUtils" />
         <option value="I/MediaCodec" />
+        <option value="InputMethodManager" />
         <option value="MediaCodec" />
-        <option value="Counters" />
+        <option value="InsetsController" />
       </list>
     </option>
   </component>
