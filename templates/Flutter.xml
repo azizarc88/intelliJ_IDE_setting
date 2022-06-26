@@ -113,4 +113,11 @@
       <option name="DART" value="true" />
     </context>
   </template>
+  <template name="gopen" value="Future&lt;T?&gt; open&lt;T&gt;() async {&#10;    return await Get.to&lt;T&gt;(() =&gt; this);&#10;}" description="Create open function" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="DART" value="true" />
+      <option name="DART_STATEMENT" value="false" />
+      <option name="DART_TOPLEVEL" value="false" />
+    </context>
+  </template>
 </templateSet>
