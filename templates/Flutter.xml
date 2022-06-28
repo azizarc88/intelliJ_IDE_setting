@@ -120,4 +120,10 @@
       <option name="DART_TOPLEVEL" value="false" />
     </context>
   </template>
+  <template name="szb" value="const SizedBox(&#10;  $VALUE$&#10;),$END$" description="Add frame callback" toReformat="false" toShortenFQNames="true">
+    <variable name="VALUE" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="DART_STATEMENT" value="true" />
+    </context>
+  </template>
 </templateSet>
