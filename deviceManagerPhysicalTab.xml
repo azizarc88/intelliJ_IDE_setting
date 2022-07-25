@@ -8,10 +8,20 @@
             <value value="9309bdee" />
           </Key>
         </key>
-        <lastOnlineTime value="2022-01-27T07:45:49.894551Z" />
         <name value="Xiaomi MI 8" />
         <target value="Android 9.0" />
         <api value="28" />
+      </PhysicalDevice>
+      <PhysicalDevice>
+        <key>
+          <Key>
+            <type value="SERIAL_NUMBER" />
+            <value value="RR8M30L0G7B" />
+          </Key>
+        </key>
+        <name value="Device" />
+        <target value="Android 1.0" />
+        <api value="1" />
       </PhysicalDevice>
     </physicalDevices>
   </component>
