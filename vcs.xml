@@ -33,6 +33,7 @@
     <option name="COLUMN_ID_ORDER">
       <list>
         <option value="Default.Root" />
+        <option value="Default.Hash" />
         <option value="Default.Subject" />
         <option value="Default.Author" />
         <option value="Default.Date" />
@@ -40,7 +41,7 @@
     </option>
     <option name="COLUMN_ID_VISIBILITY">
       <map>
-        <entry key="Table.Default.Hash.ColumnIdVisibility" value="false" />
+        <entry key="Table.Default.Hash.ColumnIdVisibility" value="true" />
       </map>
     </option>
   </component>
