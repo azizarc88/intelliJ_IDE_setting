@@ -17,13 +17,15 @@
         <option value="D/MoEngage_v11602(14967): PayloadTransformer appendDateAttributes() : No date attributes to track." />
         <option value="D/ReflectedParamUpdater" />
         <option value="D/SurfaceUtils" />
+        <option value="FrameEvents" />
         <option value="I/MediaCodec" />
         <option value="InputMethodManager" />
         <option value="InsetsController" />
         <option value="MediaCodec" />
         <option value="MoEngage_v11403" />
         <option value="TransportRuntime" />
-        <option value="FrameEvents" />
+        <option value="TRuntime" />
+        <option value="Accessing hidden method Landroid/os/Trace" />
       </list>
     </option>
   </component>
