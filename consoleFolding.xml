@@ -3,6 +3,7 @@
     <option name="addedPositive">
       <list>
         <option value="2022-08-15 09:25:31.032 25985-25985/com.mekari.flex.dev E/mekari.flex.de: No package ID 24 found for ID 0x245a3c5c." />
+        <option value="AssistStructure" />
         <option value="BufferPoolAccessor2" />
         <option value="BufferQueueProducer" />
         <option value="CCodec" />
@@ -12,6 +13,8 @@
         <option value="D/CCodec" />
         <option value="D/Codec2Client" />
         <option value="D/EGL_emulation" />
+        <option value="D/MoEngage" />
+        <option value="D/MoEngage_v11602(14967): PayloadTransformer appendDateAttributes() : No date attributes to track." />
         <option value="D/ReflectedParamUpdater" />
         <option value="D/SurfaceUtils" />
         <option value="I/MediaCodec" />
@@ -20,7 +23,7 @@
         <option value="MediaCodec" />
         <option value="MoEngage_v11403" />
         <option value="TransportRuntime" />
-        <option value="AssistStructure" />
+        <option value="FrameEvents" />
       </list>
     </option>
   </component>
