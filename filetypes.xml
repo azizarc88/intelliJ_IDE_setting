@@ -8,6 +8,8 @@
       <mapping pattern="Pluginfile" type="PLAIN_TEXT" />
       <mapping pattern="Matchfile" type="PLAIN_TEXT" />
       <mapping pattern="test2" type="PLAIN_TEXT" />
+      <mapping pattern=".stage2.dev" type="PLAIN_TEXT" />
+      <mapping pattern=".env2.dev" type="PLAIN_TEXT" />
       <mapping ext="plist" type="PLAIN_TEXT" />
       <mapping ext="lock" type="PLAIN_TEXT" />
       <mapping ext="arb" type="PLAIN_TEXT" />
