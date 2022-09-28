@@ -11,5 +11,6 @@
     <mask>*.java</mask>
     <mask>*phy.dart</mask>
     <mask>*.dart</mask>
+    <mask>*.json</mask>
   </component>
 </application>
