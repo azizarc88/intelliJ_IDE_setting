@@ -122,4 +122,9 @@
       <option name="DART_STATEMENT" value="true" />
     </context>
   </template>
+  <template name="throw" value="final fakeRequestOptions = RequestOptions(path: 'path');&#10;throw DioError(&#10;  requestOptions: fakeRequestOptions,&#10;  response: Response(&#10;    requestOptions: fakeRequestOptions,&#10;    data: {&#10;      &quot;errors&quot;: &quot;Please wait 47 seconds to resend OTP&quot;,&#10;      &quot;seconds&quot;: 47,&#10;      &quot;error_code&quot;: &quot;testing&quot;,&#10;      &quot;status&quot;: &quot;bad_request&quot;&#10;    },&#10;    statusCode: HttpStatus.badRequest,&#10;  ),&#10;);" description="Throw error" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="DART_STATEMENT" value="true" />
+    </context>
+  </template>
 </templateSet>
