@@ -30,11 +30,12 @@
         <option value="InsetsController" />
         <option value="MediaCodec" />
         <option value="MoEngage_v11403" />
+        <option value="SchedulerBinding.instance!" />
         <option value="TransportRuntime" />
         <option value="TRuntime" />
         <option value="Warning: Operand of null-aware operation" />
         <option value="WebViewFactory" />
-        <option value="SchedulerBinding.instance!" />
+        <option value="page_load_metrics_update_dispatcher" />
       </list>
     </option>
   </component>
