@@ -142,4 +142,9 @@
     <variable name="SNAME" expression="regularExpression(concat(&quot;_&quot;, NAME, &quot;State&quot;), &quot;^__&quot;, &quot;_&quot;)" defaultValue="" alwaysStopAt="false" />
     <context />
   </template>
+  <template name="throwerror" value="throw DioError(&#10;  requestOptions: RequestOptions(&#10;    path: AuthApi.refreshTokenPath,&#10;    headers: {'Refresh-Token': &quot;er&quot;},&#10;  ),&#10;  response: Response(&#10;    requestOptions: RequestOptions(&#10;      path: AuthApi.refreshTokenPath,&#10;      headers: {'Refresh-Token': &quot;er&quot;},&#10;    ),&#10;    data: {&#10;      &quot;errors&quot;: &quot;Ini adalah pesan errornya yaah, kamu tau kan ?&quot;,&#10;      &quot;status&quot;: &quot;unauthorized&quot;&#10;    },&#10;    statusCode: HttpStatus.unauthorized,&#10;  ),&#10;);" description="Create throw dio error" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="DART_STATEMENT" value="true" />
+    </context>
+  </template>
 </templateSet>
