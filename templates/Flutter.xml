@@ -47,7 +47,8 @@
       <option name="DART_STATEMENT" value="true" />
     </context>
   </template>
-  <template name="printd" value="print(&quot;########## ${$content$}&quot;);" description="Create print debug template" toReformat="false" toShortenFQNames="true">
+  <template name="printd" value="print(&quot;########## $class$ ${$content$}&quot;);" description="Create print debug template" toReformat="false" toShortenFQNames="true">
+    <variable name="class" expression="dartMethodName()" defaultValue="" alwaysStopAt="true" />
     <variable name="content" expression="dartMethodParameters()" defaultValue="" alwaysStopAt="true" />
     <context>
       <option name="DART_STATEMENT" value="true" />
