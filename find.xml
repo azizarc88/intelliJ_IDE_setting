@@ -3,6 +3,7 @@
     <option name="customScope" value="Project Files" />
     <option name="defaultScopeName" value="Project Files" />
     <option name="SEARCH_SCOPE" value="Project Files" />
+    <option name="FILE_MASK" value="*.g.dart" />
     <mask>*.css</mask>
     <mask>*.html</mask>
     <mask>*.xml</mask>
@@ -12,5 +13,6 @@
     <mask>*phy.dart</mask>
     <mask>*.json</mask>
     <mask>*.dart</mask>
+    <mask>*.g.dart</mask>
   </component>
 </application>
