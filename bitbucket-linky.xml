@@ -9,12 +9,4 @@
     <lookup />
   </component>
   <component name="Instance" id="33c1d3a9-8c2a-40b7-8c69-783e3623b549" version="2020.3.206" />
-  <component name="UsageLog">
-    <event name="OpenFile" place="ChangesBrowser" timestamp="2022-12-28T07:41:19.161690Z">
-      <attribute name="editor">false</attribute>
-      <attribute name="multipleLines">false</attribute>
-      <attribute name="multipleCarets">false</attribute>
-      <attribute name="bitbucket">cloud</attribute>
-    </event>
-  </component>
 </application>
