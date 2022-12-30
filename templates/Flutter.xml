@@ -148,4 +148,11 @@
       <option name="DART_STATEMENT" value="true" />
     </context>
   </template>
+  <template name="gropen" value="Future&lt;T?&gt; open&lt;T&gt;({bool replace = false}) async {&#10;    if (replace) {&#10;      return await Get.off&lt;T&gt;(() =&gt; this);&#10;    } else {&#10;      return await Get.to&lt;T&gt;(() =&gt; this);&#10;    }&#10;  }" description="Create open function" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="DART" value="true" />
+      <option name="DART_STATEMENT" value="false" />
+      <option name="DART_TOPLEVEL" value="false" />
+    </context>
+  </template>
 </templateSet>
