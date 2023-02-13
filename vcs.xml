@@ -30,6 +30,14 @@
           <option name="url" value="https://azizarc@bitbucket.org/mid-kelola-indonesia/mekari-pixel.git" />
           <option name="userName" value="" />
         </UrlAndUserName>
+        <UrlAndUserName>
+          <option name="url" value="https://github.com/Firelands128/photo_gallery" />
+          <option name="userName" value="" />
+        </UrlAndUserName>
+        <UrlAndUserName>
+          <option name="url" value="https://github.com/flutter/plugins/tree/main/packages/image_picker/image_picker" />
+          <option name="userName" value="" />
+        </UrlAndUserName>
       </list>
     </option>
     <option name="cloneParentDir" value="$USER_HOME$/StudioProjects" />
