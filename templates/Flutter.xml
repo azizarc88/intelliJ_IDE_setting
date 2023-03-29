@@ -155,4 +155,12 @@
       <option name="DART_TOPLEVEL" value="false" />
     </context>
   </template>
+  <template name="bvl" value="Map&lt;String, dynamic&gt; toJson() {&#10;  return serializers.serializeWith($CLASS$.serializer, this)&#10;      as Map&lt;String, dynamic&gt;;&#10;}&#10;&#10;static $CLASS$ fromJson(dynamic json) {&#10;  return deserialize&lt;$CLASS$&gt;(json);&#10;}" description="Create to json" toReformat="false" toShortenFQNames="true">
+    <variable name="CLASS" expression="dartClassName()" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="DART" value="true" />
+      <option name="DART_STATEMENT" value="false" />
+      <option name="DART_TOPLEVEL" value="false" />
+    </context>
+  </template>
 </templateSet>
