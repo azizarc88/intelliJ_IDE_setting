@@ -163,13 +163,13 @@
       <option name="DART_TOPLEVEL" value="false" />
     </context>
   </template>
-  <template name="mvs" value="const MpVerticalSpace(&#10;  space: MpSpacing.$VALUE$&#10;),$END$" description="Add vertical space" toReformat="false" toShortenFQNames="true">
+  <template name="mvs" value="const MpVerticalSpace(&#10;  space: MpSpacing$VALUE$&#10;),$END$" description="Add vertical space" toReformat="false" toShortenFQNames="true">
     <variable name="VALUE" expression="" defaultValue="" alwaysStopAt="true" />
     <context>
       <option name="DART_STATEMENT" value="true" />
     </context>
   </template>
-  <template name="mhs" value="const MpHorizontalSpace(&#10;  space: MpSpacing.$VALUE$&#10;),$END$" description="Add horizontal space" toReformat="false" toShortenFQNames="true">
+  <template name="mhs" value="const MpHorizontalSpace(&#10;  space: MpSpacing$VALUE$&#10;),$END$" description="Add horizontal space" toReformat="false" toShortenFQNames="true">
     <variable name="VALUE" expression="" defaultValue="" alwaysStopAt="true" />
     <context>
       <option name="DART_STATEMENT" value="true" />
