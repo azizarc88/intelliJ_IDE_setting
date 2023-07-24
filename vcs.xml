@@ -43,6 +43,7 @@
     <option name="cloneParentDir" value="$USER_HOME$/StudioProjects" />
   </component>
   <component name="Vcs.Log.App.Settings">
+    <option name="COMPACT_REFERENCES_VIEW" value="false" />
     <option name="SHOW_TAG_NAMES" value="true" />
     <option name="SHOW_CHANGES_FROM_PARENTS" value="true" />
     <option name="PREFER_COMMIT_DATE" value="true" />
@@ -51,8 +52,8 @@
         <option value="Default.Root" />
         <option value="Default.Hash" />
         <option value="Default.Subject" />
-        <option value="Default.Author" />
         <option value="Default.Date" />
+        <option value="Default.Author" />
       </list>
     </option>
     <option name="COLUMN_ID_VISIBILITY">
